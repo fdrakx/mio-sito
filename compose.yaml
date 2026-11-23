@@ -1,0 +1,8 @@
+services:
+  web:
+    image: nginx
+    container_name: sito-live
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/usr/share/nginx/html:ro
